@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center; /* Alinha na vertical */
+    align-items: center; /* Alinha na horizontal */
+    background: linear-gradient(120deg, rgb(55, 192, 226), rgb(153, 218, 50));
+    height: 100vh; /* Altura */
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Espaço entre as divs */
+    height: 200px;
+    width: 550px; /* Tamnho do espaço entre as divs */
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* Serve para colocar horas embaixo dos números */
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgb(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
